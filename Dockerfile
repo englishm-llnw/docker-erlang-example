@@ -13,7 +13,7 @@ WORKDIR dockerwatch
 RUN rebar3 as prod release
 
 # Build stage 1
-FROM alpine
+FROM alpine:3.9
 
 # Install some libs
 RUN apk add --no-cache openssl && \
